@@ -95,7 +95,7 @@ PBLサーバーにログインして以下を実行
       |—translate.sh        
   ```
   ### 2.2 学習用データ作成
-  tweet_pairs.txtから学習用データを作成(train:全体からdevとtestを引いた数 dev:2000 test:2000)
+  tweet_pairs.txtから学習用データを作成(train:全体からdevとtestを引いた数 dev:2000 test:2000)  
   data/OpneNMTが作成されてその中に分割されたデータが保存される  
   ```
   cd
@@ -125,7 +125,7 @@ PBLサーバーにログインして以下を実行
   ```
   
 ## 3.データの前処理
-OpneNMTで使えるようにデータの前処理を行う
+OpneNMTで使えるようにデータの前処理を行う  
 data-binが作成されてその中に前処理済みデータが保存される  
   ```
   cd
@@ -151,8 +151,8 @@ data-binが作成されてその中に前処理済みデータが保存される
       |—translate.sh        
   ```
 ## 4.学習
-OpneNMTで学習
-modelが作成されてその中にモデルが保存される  
+OpneNMTで学習  
+modelが作成されてその中にモデルが保存される   
   ```
   cd
   cd pbl/code
@@ -177,8 +177,8 @@ modelが作成されてその中にモデルが保存される
       |—translate.sh        
   ```
  ## 5.モデルの評価
- testデータからOpnenmtのtranslateで文を生成
- resultが作成されてその中に結果が保存される 
+ testデータからOpnenmtのtranslateで文を生成  
+ resultが作成されてその中に結果が保存される  
   ```
   cd
   cd pbl/code
