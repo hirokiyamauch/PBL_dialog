@@ -69,7 +69,7 @@ PBLサーバーにログインして以下を実行
   mkdir data
   mkdir data/orig
   ##データの保存場所によって真ん中の指定場所を変える##
-  mv tweet_pairs.txt data/orig/
+  cp tweet_pairs.txt data/orig/
   
   mkdir code
   cd code
