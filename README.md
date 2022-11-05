@@ -67,7 +67,7 @@ PBLサーバーにログインして以下を実行
   ```
 ## 2.Twitterデータから学習
   ### 2.1 学習用データの準備
-  収集したTwitterのデータtweet_pairs.txtをdataというdirに入れる
+  収集したTwitterのデータtweet_pairs.txtをdata/origというdirに入れる
   ```
   cd
   cd pbl
