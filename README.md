@@ -73,7 +73,7 @@ PBLサーバーにログインして以下を実行
   
   mkdir code
   cd code
-  git clone 
+  git clone https://github.com/hirokiyamauch/PBL_dialog.git
   ```
   作業用Dir内の構造イメージ
   ```
@@ -85,21 +85,22 @@ PBLサーバーにログインして以下を実行
    |  |—orig  
    |  |  |—tweet_pairs.txt  
    |  |—OpenNMT-py  
-   |—code  
-      |—python  
-      | |—generate_data_for_opennmt.py  
-      | |—generativesystem.py         
-      |—makedata.sh  
-      |—preprocess.sh  
-      |—train.sh  
-      |—translate.sh        
+   |—code 
+      |—PBL_dialog
+        |—python  
+        | |—generate_data_for_opennmt.py  
+        | |—generativesystem.py         
+        |—makedata.sh  
+        |—preprocess.sh  
+        |—train.sh  
+        |—translate.sh        
   ```
   ### 2.2 学習用データ作成
   tweet_pairs.txtから学習用データを作成(train:全体からdevとtestを引いた数 dev:2000 test:2000)  
   data/OpneNMTが作成されてその中に分割されたデータが保存される  
   ```
   cd
-  cd pbl/code
+  cd pbl/code/PBL_dialog
   bash makedata.sh
   ```
   作業用Dir内の構造イメージ
@@ -117,11 +118,7 @@ PBLサーバーにログインして以下を実行
    |     |—train.src
    |     |—train.tgt
    |—code  
-      |—python        
-      |—makedata.sh  
-      |—preprocess.sh  
-      |—train.sh  
-      |—translate.sh        
+      |—PBL_dialog        
   ```
   
 ## 3.データの前処理
@@ -129,7 +126,7 @@ OpneNMTで使えるようにデータの前処理を行う
 data-binが作成されてその中に前処理済みデータが保存される  
   ```
   cd
-  cd pbl/code
+  cd pbl/code/PBL_dialog
   bash preprocess.sh
   ```
   作業用Dir内の構造イメージ
@@ -144,18 +141,14 @@ data-binが作成されてその中に前処理済みデータが保存される
    |  |—dlg.valid.0.pt
    |  |—dlg.vocab.pt
    |—code  
-      |—python        
-      |—makedata.sh  
-      |—preprocess.sh  
-      |—train.sh  
-      |—translate.sh        
+      |—PBL_dialog      
   ```
 ## 4.学習
 OpneNMTで学習  
 modelが作成されてその中にモデルが保存される   
   ```
   cd
-  cd pbl/code
+  cd pbl/code/PBL_dialog
   bash train.sh
   ```
   作業用Dir内の構造イメージ
@@ -170,18 +163,14 @@ modelが作成されてその中にモデルが保存される
    |  |—dlg_model_step_50000.pt
    |  |—dlg_model_step_100000.pt
    |—code  
-      |—python        
-      |—makedata.sh  
-      |—preprocess.sh  
-      |—train.sh  
-      |—translate.sh        
+      |—PBL_dialog     
   ```
  ## 5.モデルの評価
  testデータからOpnenmtのtranslateで文を生成  
  resultが作成されてその中に結果が保存される  
   ```
   cd
-  cd pbl/code
+  cd pbl/code/PBL_dialog
   bash translate.sh  
   ```
   作業用Dir内の構造イメージ
@@ -196,11 +185,7 @@ modelが作成されてその中にモデルが保存される
    |— result
    |  |— pred.txt
    |—code  
-      |—python        
-      |—makedata.sh  
-      |—preprocess.sh  
-      |—train.sh  
-      |—translate.sh        
+      |—PBL_dialog      
   ```
  引用  
   @misc{Pythonでつくる対話システム,  
