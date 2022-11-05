@@ -156,7 +156,7 @@ modelが作成されてその中にモデルが保存される
   ```
   cd
   cd pbl/code
-  bash preprocess.sh
+  bash train.sh
   ```
   作業用Dir内の構造イメージ
   ```
