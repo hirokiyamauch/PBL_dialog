@@ -9,6 +9,7 @@ PBLサーバーにログインして以下を実行
   cd
   mkdir download
   cd download
+  
   ##anaconda download##
   wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
   bash ./Anaconda3-2020.02-Linux-x86_64.sh
@@ -41,6 +42,7 @@ PBLサーバーにログインして以下を実行
   cd pbl
   mkdir download  
   cd download  
+  
   ##対話の教科書に載っているgithubを保存しておくhttps://github.com/dsbook/dsbook##
   git clone https://github.com/dsbook/dsbook.git  
   
