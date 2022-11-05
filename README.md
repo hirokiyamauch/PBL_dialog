@@ -203,9 +203,9 @@ modelが作成されてその中にモデルが保存される
       |—translate.sh        
   ```
  引用  
-  @misc{Pythonでつくる対話システム,
-  title={Pythonでつくる対話システム},
-  author={東中 竜一郎 and 稲葉 通将 and 水上 雅博},
-  year={2020},
-  publisher={オーム社}
-}
+  @misc{Pythonでつくる対話システム,  
+  title={Pythonでつくる対話システム},  
+  author={東中 竜一郎 and 稲葉 通将 and 水上 雅博},  
+  year={2020},  
+  publisher={オーム社}  
+}  
